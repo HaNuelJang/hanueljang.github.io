@@ -19,7 +19,7 @@ tags: [JAVA, JVM]
 <hr>  
 * 먼저 작성한 Java소스를 Java Compiler 의해 Class파일(ByteCode)로 변환한다.  
 * 그후 프로그램을 실행시키면 JVM은 OS로부터 메모리를 할당받는다. 할당받은 메모리는 용도에 따라 나눠서 관리한다.  
-* 적재된 바이트코드를 OS가 인식 할 수 있는 기계어로 변환하는 작업을 한다.
+* 적재된 바이트코드를 명령어 단위로 읽어서 실행다.
 
 # 3. JVM의 Architecture
 <hr>  
@@ -58,4 +58,5 @@ Thread가 생성될 때 마다 생기는 메모리영역으로 Thread가 어떠�
 
 ## 3-3. Execution Engine
 <hr>  
-최종적으로 실행될 ByteCode를 기계어로 변역하는 영역이다.
+Class Loader를 통해 JVM 내의 Runtime Data Areas 에 배치된 바이트 코드는 Executin Engine에 의해 실행되며, 실행 엔진은 자바 바이트 코드를 명령어 단위로 읽어서 실행한다.
+최초 JVM 이 나왔을 당시에는 Interperter방식(한 줄씩 해석하고 실행)이였기 때문에 속도가 느리다는 단점이 있었지만 JIT complier 방식을 통해 이 점을 보완했다.
