@@ -18,15 +18,14 @@ timezone: Asia/Seoul
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: 하얀눈길 블로그                          # the main title
+title: Hanuel Jang                          # the main title
 
-tagline: 반갑습니다. 하얀눈길입니다.<br> 잊어버리기 전에 기록하려 합니다.
+tagline: 기술 정리 블로그
 
 description: >-                        # used by seo meta and the atom feed
-  검색엔진 개발자 그룹이었으나, 현재는 개인 블로그로만 운영합니다. 예전 글들은 천천히 올려보려 합니다. 개발자로서 새롭게 알게된 것이나, 잊어버리고 있는 많은 것을 기록해 보려 합니다.
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
-url: 'https://www.irgroup.org'
+url: 'https://hanueljang.github.io/'
 
 github:
   username: focuschange             # change to your github username
@@ -37,8 +36,8 @@ github:
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: '하얀눈길'
-  email: focuschange@gmail.com             # change to your email address
+  name: '장하늘'
+  email: hanueljang082@gmail.com             # change to your email address
   links:
     # The first element serves as the copyright owner's link
     #- https://twitter.com/username      # change to your twitter homepage
@@ -53,7 +52,7 @@ google_site_verification: i7DonAsg2XevX1vbo0yJyGpmzhwsylBrYop20xy_Z48 # change t
 
 
 google_analytics:
-  id: 'UA-1872238-1'              # fill in your Google Analytics ID
+  id: ''              # fill in your Google Analytics ID
   # Google Analytics pageviews report settings
   pv:
     proxy_endpoint:   # fill in the Google Analytics superProxy endpoint of Google App Engine
