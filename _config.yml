@@ -18,7 +18,7 @@ timezone: Asia/Seoul
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Hanuel Jang                          # the main title
+title: SKY                          # the main title
 
 tagline: 기술 정리 블로그
 
@@ -36,7 +36,7 @@ github:
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: '장하늘'
+  name: 'Hanuel Jang'
   email: hanueljang082@gmail.com             # change to your email address
   links:
     # The first element serves as the copyright owner's link
