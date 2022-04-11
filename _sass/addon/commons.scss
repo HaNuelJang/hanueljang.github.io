@@ -639,8 +639,8 @@ $sidebar-display: "sidebar-display";
   #avatar {
     > a {
       display: block;
-      width: 15rem;
-      height: 10rem;
+      width: 12rem;
+      height: 8rem;
       border-radius: 50%;
       border: 2px solid rgba(222, 222, 222, 0.7);
       overflow: hidden;
@@ -1151,8 +1151,8 @@ $sidebar-display: "sidebar-display";
   }
 
   #avatar > a {
-    width: 5rem;
-    height: 5rem;
+    width: 12rem;
+    height: 8rem;
   }
 
   .site-subtitle {
@@ -1580,8 +1580,8 @@ $sidebar-display: "sidebar-display";
         @extend %profile-ml;
 
         > a {
-          width: 6.2rem;
-          height: 6.2rem;
+          width: 12rem;
+          height: 8rem;
 
           &.mx-auto {
             margin-left: 0 !important;
