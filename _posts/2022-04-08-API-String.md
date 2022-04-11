@@ -3,7 +3,7 @@ layout: post
 title: String, String Builder, and String Buffer
 date: '2022-04-08 10:59:10 +0900'
 description: 'Difference between String, String Builder, and String Buffer.  '
-categories: [JAVA, Collection]
+categories: [JAVA, Basic]
 img: ''
 tags: [JAVA, String]
 ---
