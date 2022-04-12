@@ -59,5 +59,5 @@ Thread가 생성될 때 마다 생기는 메모리영역으로 Thread가 어떠�
 
 ### Execution Engine
 <hr>  
-Class Loader를 통해 JVM 내의 Runtime Data Areas 에 배치된 바이트 코드는 Executin Engine에 의해 실행되며, 실행 엔진은 자바 바이트 코드를 명령어 단위로 읽어서 실행한다.
-최초 JVM 이 나왔을 당시에는 Interperter방식(한 줄씩 해석하고 실행)이였기 때문에 속도가 느리다는 단점이 있었지만 JIT complier 방식을 통해 이 점을 보완했다.
+Class Loader를 통해 JVM 내의 Runtime Data Areas 에 배치된 바이트 코드는 Execution Engine에 의해 실행되며, 실행 엔진은 자바 바이트 코드를 명령어 단위로 읽어서 실행한다.
+최초 JVM 이 나왔을 당시에는 Interpreter방식(한 줄씩 해석하고 실행)이였기 때문에 속도가 느리다는 단점이 있었지만 JIT compliler 방식을 통해 이 점을 보완했다.
