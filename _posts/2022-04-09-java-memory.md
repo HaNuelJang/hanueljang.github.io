@@ -8,14 +8,14 @@ img: ''
 tags: [JAVA, JVM]
 ---
 
-# 1. JVM은 무엇인가?
+# 1. JVM은 무엇인가
 <hr>  
 * JAVA Virtual Machine  
 * JRE의 한 부분(구성요소)  
 * OS에 영향을 받지 않고 클래스파일(ByteCode)을 실행  
 * GC(메모리 관리)수행  
 
-# 2. JVM은 무엇을 하는가?
+# 2. JVM은 무엇을 하는가
 <hr>  
 * 먼저 작성한 Java소스를 Java Compiler 의해 Class파일(ByteCode)로 변환한다.  
 * 그후 프로그램을 실행시키면 JVM은 OS로부터 메모리를 할당받는다. 할당받은 메모리는 용도에 따라 나눠서 관리한다.  
