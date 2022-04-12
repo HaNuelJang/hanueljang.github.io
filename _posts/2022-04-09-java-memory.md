@@ -19,25 +19,26 @@ tags: [JAVA, JVM]
 <hr>  
 * 먼저 작성한 Java소스를 Java Compiler 의해 Class파일(ByteCode)로 변환한다.  
 * 그후 프로그램을 실행시키면 JVM은 OS로부터 메모리를 할당받는다. 할당받은 메모리는 용도에 따라 나눠서 관리한다.  
-* 적재된 바이트코드를 명령어 단위로 읽어서 실행다.
+* JVM에 적재된 ByteCode를 명령어 단위로 읽어서 실행다.  
+![images_swcide_post_3c2e84d2-6508-49f2-859f-a380419ee4e8_jvm](https://user-images.githubusercontent.com/103012019/162865775-f44d1b6e-e7f1-4b9c-9811-7e2cc0ac00b3.png)
 
 # 3. JVM의 Architecture
 <hr>  
 ![jvm_architecture](https://user-images.githubusercontent.com/103012019/162580108-aa7d740d-4c1b-4e40-9171-44f31a9ee681.png)
 
 ## 3-1. Class Loader
-프로그램이 실행되면 Class Loader는 필요한 ByteCode들을 동적으로 읽어온다. 해당 단계에서 바이트코드를 검증하고 초기화하는 작업을 진행한다. 마지막으로 Runtime Data Area에 적재한다.
+프로그램이 실행되면 Class Loader는 필요한 ByteCode를 동적으로 읽어온다. 해당 단계에서 ByteCode를 검증하고 초기화하는 작업을 진행한다. 마지막으로 Runtime Data Area에 적재한다.
 
 ## 3-2. Runtime Data Area
 프로그램이 실행되면서 할당받은 메모리 영역이다. 아래의 6개의 영역으로 세분화하여 메모리를 관리한다.
-* Medhod Area
+* Method Area
 * Heap
 * Stack
 * PC Register
 * Native Method Stack  
 
 ### 1) Method Area
-적재된 ByteCode들을 분석하여 클래스의 타입,변수,메소드 등의 정보를 저장한다. 이때 Class변수(static)도 함께 생성된다.
+적재된 ByteCode들을 분석하여 클래스의 타입,변수,메소드 등의 정보를 저장한다. 이때 Class변수(static)도 함께 생성된다. 해당 영역은 정보만 저장할 뿐, 실제 데이터는 Heap에서 인스턴스하고 관리된다.
 
 ### 2) Heap
 클래스를 동적으로 생성하면 인스턴스가 메모리에 할당되는 영역이다. 또한 GC(Garbage Collection)의 대상이다.
@@ -45,14 +46,14 @@ tags: [JAVA, JVM]
 > `Method Area`, `Heap`은 <mark>모든 Thread가 메모리를 공유하는 영역이다.</mark>
 
 ### 3) Stack
-메소드가 호출될 때 메소드의 스택프레임이 저장되는 영역  
+메소드가 호출될 때 메소드의 스택프레임이 저장되는 영역.  
 메소드가 호출되면 메소드의 지역변수, 매개변수 등 스택프레임에 저장하여 관리한다. 메소드가 호출이 완료되면 해당 스택프레임은 메모리에서 해재된다.  
 
 ### 4) PC Register
 Thread가 생성될 때 마다 생기는 메모리영역으로 Thread가 어떠한 명령을 실행하게 될지에 대한 부분을 기록을 한다.  
 
 ### 5) Native Method Stack
-자바 이외의 언어에서 제공되는 Method의 정보가 저장 되는 공간, JNI(Java Native Interface)를 통해 바이트코드로 변환 해준다.  
+자바 이외의 언어에서 제공되는 Method의 정보가 저장 되는 공간, JNI(Java Native Interface)를 통해 ByteCode로 변환 해준다.  
 
 > `Stack`, `PC Register`, `Native Method Stack`은 <mark>각각 Thread마다 독립적으로 생성되는 영역이다.</mark>
 
