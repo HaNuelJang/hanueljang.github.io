@@ -17,9 +17,12 @@ tags: [JAVA, JVM]
 
 # JVM은 무엇을 하는가
 <hr>  
-* 먼저 작성한 Java소스를 Java Compiler 의해 Class파일(ByteCode)로 변환한다.  
-* 그후 프로그램을 실행시키면 JVM은 OS로부터 메모리를 할당받는다. 할당받은 메모리는 용도에 따라 나눠서 관리한다.  
-* JVM에 적재된 ByteCode를 명령어 단위로 읽어서 실행다.  
+`먼저 작성한 Java소스를 Java Compiler 의해 Class파일(ByteCode)로 변환한다.`  
+* JVM은 OS로부터 메모리를 할당받는다.
+* ByteCode를 읽어온다.
+* ByteCode를 검증한다. (유효한 컴파일러에 의해 생성되었는지 확인)
+* ByteCode를 적재한다. (할당받은 메모리를 용도에 따라 나눠서 관리)
+* ByteCode를 실행한다. (기계어 변경, 명령어 단위 실행)  
 ![images_swcide_post_3c2e84d2-6508-49f2-859f-a380419ee4e8_jvm](https://user-images.githubusercontent.com/103012019/162865775-f44d1b6e-e7f1-4b9c-9811-7e2cc0ac00b3.png)
 
 # JVM의 Architecture
