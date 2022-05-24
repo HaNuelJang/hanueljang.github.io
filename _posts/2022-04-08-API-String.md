@@ -76,8 +76,8 @@ public class StringMemoryIntern {
 | 클래스(java.lang) | 상세 | Thread Safe(동기화) |
 |:--------|:-------|:-------|
 | String   | 문자열을 저장하고 여러가지 정보를 얻을 때 사용| O |
-| StringBuilder   | 문자열을 저장하고 내부 문자열을 조작할 때 사용| O |
-| StringBuffer   | 문자열을 저장하고 내부 문자열을 조작할 때 사용| X |  
+| StringBuilder   | 문자열을 저장하고 내부 문자열을 조작할 때 사용| X |
+| StringBuffer   | 문자열을 저장하고 내부 문자열을 조작할 때 사용| O |  
 
 ## #String
 > * 문자열을 저장하고 여러 가지 정보를 얻을 때 사용  
